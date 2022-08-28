@@ -6,8 +6,11 @@ nums = nums.map((num) => {
 		return "Fizz"
 	} else if (num % 5 == 0) {
 		return 'Buzz'
+	} else if (num % 3 ===0 && num % 5 === 0){
+		return 'fizzbuzz'
+	
 	} else {
-		return 'FizzBuzz'
+		return num
 	}
 })
 console.log(nums)
